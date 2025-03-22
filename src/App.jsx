@@ -6,7 +6,7 @@ import EntriesPage from "./pages/Entries";
 
 function App() {
   return (
-    <div className="bg-gray-300 w-screen h-screen flex flex-col">
+    <div className="bg-gray-300 w-screen h-screen flex flex-col text-gray-800">
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
