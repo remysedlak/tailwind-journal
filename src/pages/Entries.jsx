@@ -28,9 +28,9 @@ const Entries = () => {
     return(
       <div className="flex flex-col items-centers p-5 m-4 ">
           {/* title */}
-          <h1 className="mt-4 text-3xl pb-4">{isSearching ? `Search results: `+ searchQuery: `your recent entries:`}</h1>
+          <h1 className="mt-4 text-3xl pb-4">{isSearching ? `search results: `+ searchQuery: `your recent entries:`}</h1>
           {/* shows recent entries or search results */}
-          {isSearching ? entries.filter((entry) => entry.title.toLowerCase().includes(searchQuery.toLowerCase())).map((entry, index) => (
+          {isSearching ? entries.filter((entry) => entry.title.toLowerCase().includes(searchQuery.toLowerCase())).slice(-3).map((entry, index) => (
             <EntryCard
                 key={index}
                 title={entry.title}
@@ -56,12 +56,12 @@ const Entries = () => {
             onChange={(e) => {
               const value = e.target.value;
               setSearchQuery(value);
-              setSearching(value !== "");
+              setSearching(value.trim() !== "");
             }}
             className="p-2 border rounded mt-2 text-center"
           />
           {/* nav button */}
-          <button className="justify-bottom border bg-gray-100 rounded text-center mt-2 text-xl p-2 hover:bg-blue-200"
+          <button className="justify-bottom border bg-gray-100 rounded text-center mt-2 text-xl p-2 hover:bg-blue-200 position-absolut"
             onClick={goToHomePage}>
             click here to go back home...
           </button>
