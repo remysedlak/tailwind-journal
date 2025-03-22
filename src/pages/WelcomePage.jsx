@@ -11,7 +11,7 @@ const WelcomePage = ({ onSaveName }) => {
   };
 
   return (
-    <div className="flex flex-col items-center h-full w-full lg:justify-around p-2 text-center">
+    <div className="flex flex-col items-center h-full w-full lg:justify-around p-2 text-center gap-y-20 lg:gap-y-5">
       {/* Title */}
       <div className="flex lg:flex-row flex-col justify-around text-3xl lg:text-6xl">
         <h1>welcome to&nbsp;</h1>
@@ -34,6 +34,9 @@ const WelcomePage = ({ onSaveName }) => {
               placeholder="enter name here :)"
               className="lg:text-3xl text-xl text-center pb-4"
             />
+            <button type="submit" className="mt-4 px-4 py-2  text-black border rounded-lg lg:text-3xl text-xl">
+              Submit
+            </button>
           </form>
         </>
       ) : (
