@@ -21,7 +21,7 @@ const WelcomePage = ({ onSaveName }) => {
       </div>
 
       {/* Paragraph */}
-      <p className="lg:text-3xl/15 text-xl text-gray-700 lg:w-1/2 w-3/4 my-3">we are happy to have you here!<br/>
+      <p className="lg:text-3xl/15 text-xl text-gray-700 lg:w-1/2 w-3/4 mt-3">we are happy to have you here!<br/>
       let's get started with your first name.</p>
       {/* name */}
       {!isSubmitted ? (
@@ -32,10 +32,10 @@ const WelcomePage = ({ onSaveName }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="enter name here :)"
-              className="lg:text-3xl text-xl text-center pb-4"
+              className="lg:text-3xl text-xl text-center my-8"
             />
-            <button type="submit" className="mt-4 px-4 py-2  text-black border rounded-lg lg:text-3xl text-xl">
-              Submit
+            <button type="submit" className="mt-4 px-4 py-2  w-full text-black border rounded-lg lg:text-2xl text-lg hover:bg-gray-200">
+              submit
             </button>
           </form>
         </>
