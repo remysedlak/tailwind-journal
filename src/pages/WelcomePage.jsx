@@ -11,8 +11,14 @@ const WelcomePage = ({ onSaveName }) => {
   };
 
   return (
-    <div className="flex flex-col items-center h-full w-full justify-around">
-      <h1 className="text-6xl">welcome to journallogger</h1>
+    <div className="flex flex-col items-center h-full w-full justify-around p-2 text-center">
+      <div className="flex flex-row justify-around text-6xl">
+        <h1>welcome to&nbsp;</h1>
+        <h1 className="text-purple-600 ">journal</h1>
+        <h1 className="text-blue-600">logger</h1>
+      </div>
+      <p className="text-3xl/15 text-gray-700 w-1/2">we are happy to have you here!<br/>
+      let's get started with your first name.</p>
       {!isSubmitted ? (
         <>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
@@ -20,8 +26,8 @@ const WelcomePage = ({ onSaveName }) => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="what's your name?"
-              className="text-3xl border border-gray-300 rounded-md text-center"
+              placeholder="enter name here :)"
+              className="text-3xl text-center pb-4"
             />
           </form>
         </>
