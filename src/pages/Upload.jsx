@@ -59,7 +59,7 @@ return (
         />
 
         <button 
-          className="bg-blue-200 border rounded px-2 mt-2 hover:bg-blue-300" 
+          className="bg-gray-200 border rounded px-2 mt-2 hover:bg-blue-300" 
           type="button" 
           onClick={addEntry}
         >

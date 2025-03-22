@@ -53,7 +53,11 @@ const Entries = () => {
             type="text" 
             placeholder="search for entries" 
             value={searchQuery} 
-            onChange={(e) =>{ setSearchQuery(e.target.value); searchQuery == '' ? setSearching(true): setSearching(false);}}
+            onChange={(e) => {
+              const value = e.target.value;
+              setSearchQuery(value);
+              setSearching(value !== "");
+            }}
             className="p-2 border rounded mt-2 text-center"
           />
           {/* nav button */}
