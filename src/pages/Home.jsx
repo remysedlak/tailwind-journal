@@ -17,7 +17,7 @@ function Home({ userName }) {
   return (
     <div className="flex flex-col h-screen justify-around items-center p-2 m-2">
       {/* title */}
-      <div className="flex flex-row justify-around text-6xl">
+      <div className="flex flex-row justify-around lg:text-6xl text-4xl">
         <h1 className="text-purple-600 ">journal</h1>
         <h1 className="text-blue-600">logger</h1>
       </div>
