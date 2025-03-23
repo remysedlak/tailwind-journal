@@ -32,7 +32,7 @@ const UploadPage = ({ userName }) => {
       };
 return (
     
-<div className="flex flex-col items-center justify-around py-5 m-4 ">
+<div className="flex flex-col items-center justify-around py-5 bg-gray-300">
       <h1 className="text-4xl pb-5">how are you, {userName}?</h1>
       <div className="bg-gray-100 border rounded flex flex-col my-4 p-2 gap-y-4 w-3/4">
         <h1 className="text-2xl text-center">log your thoughts here :)</h1>

@@ -26,7 +26,7 @@ const Entries = () => {
       };
     
     return(
-      <div className="flex flex-col items-centers p-5 m-4 ">
+      <div className="flex flex-col items-centers p-5 bg-gray-300">
           {/* title */}
           <h1 className="mt-4 text-3xl pb-4">{isSearching ? `search results: `+ searchQuery: `your recent entries:`}</h1>
           {/* shows recent entries or search results */}
@@ -58,7 +58,7 @@ const Entries = () => {
               setSearchQuery(value);
               setSearching(value.trim() !== "");
             }}
-            className="p-2 border rounded mt-2 text-center"
+            className="p-2 border rounded mt-2 text-center bg-gray-100"
           />
           {/* nav button */}
           <button className="justify-bottom border bg-gray-100 rounded text-center mt-2 text-xl p-2 hover:bg-blue-200 position-absolut"
