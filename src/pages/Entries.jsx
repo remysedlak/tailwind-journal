@@ -26,7 +26,7 @@ const Entries = () => {
       };
     
     return(
-      <div className="flex flex-col h-screen overflow-y-hidden items-centers p-5 bg-gray-300">
+      <div className="flex flex-col h-screen overflow-y-hidden items-centers p-5 bg-orange-200">
           {/* title */}
           <h1 className="mt-4 text-3xl pb-4">{isSearching ? `search results: `+ searchQuery: `your recent entries:`}</h1>
           {/* shows recent entries or search results */}

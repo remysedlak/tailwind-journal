@@ -25,16 +25,19 @@ const UploadPage = ({ userName }) => {
         if (title && date && text) {
           const newEntry = { title, date, text };
           const updatedEntries = [...entries, newEntry];
-    
+        
           setEntries(updatedEntries);
           setTitle(''); setDate(''); setText('');
+          alert("Journal entry saved successfully!");
+        } else {
+          alert("Please fill out all fields before saving.");
         }
       };
 return (
     
-<div className="flex flex-col items-center justify-around py-5 bg-gray-300">
+<div className="flex flex-col items-center justify-around py-5 bg-orange-200">
       <h1 className="text-4xl pb-5">how are you, {userName}?</h1>
-      <div className="bg-gray-100 border rounded flex flex-col my-4 p-2 gap-y-4 w-3/4">
+      <div className="bg-orange-50 border rounded flex flex-col my-4 p-2 gap-y-4 md:gap-y-10 w-3/4">
         <h1 className="text-2xl text-center">log your thoughts here :)</h1>
         <input 
           type="text" 
@@ -59,7 +62,7 @@ return (
         />
 
         <button 
-          className="bg-gray-200 border rounded px-2 mt-2 hover:bg-blue-300" 
+          className="bg-orange-100 border rounded px-2 mt-2 hover:bg-blue-300" 
           type="button" 
           onClick={addEntry}
         >

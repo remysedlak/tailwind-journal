@@ -21,7 +21,7 @@ function App() {
     localStorage.setItem("userName", name);
   };
   return (
-    <div className="bg-gray-300 w-screen h-screen flex flex-col text-gray-800 font-mono">
+    <div className="bg-orange-200 w-screen h-screen flex flex-col text-gray-800 font-mono">
     <Router>
       <Routes>
         {/* condtional welcome page */}

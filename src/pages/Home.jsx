@@ -18,13 +18,13 @@ function Home({ userName }) {
     <div className="flex flex-col h-screen justify-around items-center p-2 m-2">
       {/* title */}
       <div className="flex flex-row justify-around lg:text-6xl text-4xl" >
-        <h1 className="text-purple-600 motion-preset-wobble ">journal</h1>
-        <h1 className="text-blue-600">logger</h1>
+        <h1 className="text-orange-600 motion-preset-wobble ">journal</h1>
+        <h1 className="text-red-600">logger</h1>
       </div>
       {/* directions */}
-        <ul className="bg-gray-100 p-2 gap-y-6 border flex flex-col text-center justify-around rounded text-xl">
+        <ul className="bg-orange-50 p-2 gap-y-6 border flex flex-col text-center justify-around rounded text-xl">
 
-          <li>welcome to jl, <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 text-transparent bg-clip-text">{name}</span></li>
+          <li>welcome to jl, {name}!</li>
 
           <li >this app is made to log any thoughts you wish to save for later</li>
           <li>your entries will be stored on your device's browser cache</li>
