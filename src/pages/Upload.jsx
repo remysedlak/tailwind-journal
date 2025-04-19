@@ -69,7 +69,7 @@ return (
           click to save entry
         </button>
       </div>
-
+    <div className="flex flex-col md:flex-row md:gap-x-4 gap-y-4">
       <button className="border bg-gray-100  rounded text-center mt-4 text-xl p-1 hover:bg-blue-200"
       onClick={goToUploadPage}>
         click here to view past entries...
@@ -79,6 +79,7 @@ return (
       onClick={goToHomePage}>
         click here to go back home...
       </button>
+      </div>
     </div>
     )
 }
